@@ -1,0 +1,20 @@
+
+
+<table class="table table-bordered">
+  <thead>
+    <th>Name</th>
+    <th>Gender</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of contacts">
+      <td> {{getSalutation(c)}} {{ c.firstname }} {{c.lastname}}</td>
+      <td>{{ c.address }}</td>
+      <td>{{ c.city }}</td>
+      <td>{{ c.state }}</td>
+    </tr>
+  </tbody>
+
+</table>
